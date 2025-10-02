@@ -1,99 +1,99 @@
-# 🌐 Website Profil Panti Asuhan Baitii Jannatii
+# 🌐 Baitii Jannatii Orphanage Profile Website
 
-Ini adalah proyek Kerja Praktek untuk **Rancang Bangun Website Profil Panti Asuhan Baitii Jannatii** di Purwokerto. Website ini dibangun sebagai sistem informasi berbasis web untuk meningkatkan visibilitas online, memudahkan calon donatur mendapatkan informasi, serta menyediakan platform bagi panti untuk membagikan berita dan kegiatan mereka.
+This is a university practical work project for the **Design and Implementation of a Profile Website for the Baitii Jannatii Orphanage** located in Purwokerto, Indonesia. This web-based information system was developed to enhance the orphanage's online visibility, provide essential information for potential donors, and serve as a platform for sharing news and activities.
 
-![Tangkapan Layar Website](./screenshots/homepage.png)
-
----
-
-## ✨ Fitur Utama
-
-### Untuk Pengunjung (Frontend)
-- **Desain Modern & Responsif:** Tampilan website dapat menyesuaikan diri dengan baik di berbagai perangkat (desktop, tablet, dan mobile).
-- **Halaman Dinamis:** Konten seperti Visi & Misi, Kontak, Galeri, dan Artikel dikelola sepenuhnya oleh admin.
-- **Animasi Interaktif:** Transisi halaman yang mulus (SPA) dan animasi saat scroll (`AOS.js`) untuk pengalaman pengguna yang lebih menarik.
-- **Galeri Foto:** Menampilkan kegiatan panti dengan fitur *lightbox* (zoom gambar).
-- **Daftar & Detail Artikel:** Pengunjung dapat membaca berita dan kegiatan terbaru yang dipublikasikan oleh panti.
-- **Formulir Kontak:** Pengunjung dapat mengirim pesan langsung melalui website.
-
-### 🔐 Untuk Admin (Backend)
-- **Otentikasi Aman:** Halaman admin dilindungi dengan sistem login.
-- **Dasbor Admin:** Tampilan utama setelah login.
-- **CRUD Pengaturan Website:** Admin dapat mengubah data inti seperti Visi, Misi, Alamat, dan Kontak kapan saja.
-- **CRUD Manajemen Galeri:** Admin dapat dengan mudah mengunggah dan menghapus foto-foto kegiatan.
-- **CRUD Manajemen Artikel:** Admin memiliki sistem untuk Tulis, Edit, dan Hapus artikel atau berita.
+![Website Screenshot](./screenshots/homepage.png)
 
 ---
 
-## 💻 Tumpukan Teknologi (Tech Stack)
+## ✨ Key Features
 
-Proyek ini dibangun menggunakan tumpukan teknologi modern:
+### For Visitors (Frontend)
+- **Modern & Responsive Design:** The website layout adapts seamlessly across various devices (desktop, tablet, and mobile).
+- **Dynamic Content:** Core content such as the Vision & Mission, contact details, photo gallery, and articles are fully managed by an administrator.
+- **Interactive Animations:** Features smooth page transitions (SPA-like experience) and scroll-triggered animations (`AOS.js`) for a more engaging user experience.
+- **Photo Gallery:** Showcases the orphanage's activities with a functional lightbox feature.
+- **Article System:** Visitors can read the latest news and stories published by the orphanage staff.
+- **Contact Form:** A functional form allowing visitors to send messages directly through the website.
+
+### 🔐 For Administrators (Backend)
+- **Secure Authentication:** The admin panel is protected by a secure login system.
+- **Admin Dashboard:** A central hub for all content management tasks.
+- **CRUD for Website Settings:** Admins can easily update core information like the Vision, Mission, Address, and other contact details.
+- **CRUD for Gallery Management:** A user-friendly interface to upload new photos and delete old ones.
+- **CRUD for Article Management:** A complete system to Create, Read, Update, and Delete articles and news posts.
+
+---
+
+## 💻 Tech Stack
+
+This project is built with a modern and robust tech stack:
 
 - **Backend:** **Laravel 10** (PHP Framework)
 - **Frontend:** **Vue.js 3** (JavaScript Framework)
-- **Routing & Glue:** **Inertia.js** (untuk menciptakan pengalaman SPA)
+- **Routing & Glue:** **Inertia.js** (for creating a modern, single-page app experience)
 - **Styling:** **Tailwind CSS** (Utility-first CSS Framework)
 - **Database:** **MySQL**
 - **Development Environment:** Vite, XAMPP/Laragon
-- **Animasi:** AOS (Animate On Scroll)
+- **Animation:** AOS (Animate On Scroll)
 
 ---
 
-## 🚀 Instalasi & Setup Lokal
+## 🚀 Local Installation & Setup
 
-Berikut adalah cara untuk menjalankan proyek ini di lingkungan lokal.
+Follow these steps to run the project in a local environment.
 
-**Prasyarat:**
+**Prerequisites:**
 - PHP >= 8.1
 - Composer
 - Node.js & NPM
-- Database (MySQL)
+- A MySQL Database
 
-**Langkah-langkah:**
-1.  **Clone repository ini:**
+**Steps:**
+1.  **Clone this repository:**
     ```bash
-    git clone https://github.com/almasfaiqkh/website-baitii-jannatii.git
+    git clone [https://github.com/almasfaiqkh/website-baitii-jannatii.git](https://github.com/almasfaiqkh/website-baitii-jannatii.git)
     ```
-2.  **Masuk ke direktori proyek:**
+2.  **Navigate into the project directory:**
     ```bash
     cd website-baitii-jannatii
     ```
-3.  **Install dependensi PHP:**
+3.  **Install PHP dependencies:**
     ```bash
     composer install
     ```
-4.  **Install dependensi JavaScript:**
+4.  **Install JavaScript dependencies:**
     ```bash
     npm install
     ```
-5.  **Salin file environment:**
+5.  **Copy the environment file:**
     ```bash
     cp .env.example .env
     ```
-6.  **Generate application key:**
+6.  **Generate the application key:**
     ```bash
     php artisan key:generate
     ```
-7.  **Konfigurasi file `.env`:**
-    Sesuaikan koneksi database (DB_DATABASE, DB_USERNAME, DB_PASSWORD) dengan pengaturan lokal Anda.
+7.  **Configure your `.env` file:**
+    Update the database connection details (DB_DATABASE, DB_USERNAME, DB_PASSWORD) to match your local setup.
 
-8.  **Jalankan migrasi dan seeder database:**
+8.  **Run the database migrations and seeders:**
     ```bash
     php artisan migrate:fresh --seed
     ```
-9.  **Buat symbolic link untuk storage:**
+9.  **Create the storage symbolic link:**
     ```bash
     php artisan storage:link
     ```
-10. **Jalankan server development:**
-    - Di terminal pertama: `php artisan serve`
-    - Di terminal kedua: `npm run dev`
+10. **Run the development servers:**
+    - In the first terminal: `php artisan serve`
+    - In the second terminal: `npm run dev`
 
-11. **Buka aplikasi:**
-    Akses `http://127.0.0.1:8000` di browser Anda.
+11. **Open the application:**
+    Access `http://127.0.0.1:8000` in your browser.
 
 ---
 
-## 📄 Lisensi
+## 📄 License
 
-Proyek ini dilisensikan di bawah Lisensi MIT.
+This project is licensed under the MIT License.
