@@ -52,11 +52,11 @@ Berikut adalah cara untuk menjalankan proyek ini di lingkungan lokal.
 **Langkah-langkah:**
 1.  **Clone repository ini:**
     ```bash
-    git clone [https://github.com/NAMA_USER_ANDA/NAMA_REPO_ANDA.git](https://github.com/NAMA_USER_ANDA/NAMA_REPO_ANDA.git)
+    git clone https://github.com/almasfaiqkh/website-baitii-jannatii.git
     ```
 2.  **Masuk ke direktori proyek:**
     ```bash
-    cd nama-folder-proyek
+    cd website-baitii-jannatii
     ```
 3.  **Install dependensi PHP:**
     ```bash
