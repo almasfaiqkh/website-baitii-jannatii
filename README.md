@@ -52,7 +52,7 @@ Follow these steps to run the project in a local environment.
 **Steps:**
 1.  **Clone this repository:**
     ```bash
-    git clone [https://github.com/almasfaiqkh/website-baitii-jannatii.git](https://github.com/almasfaiqkh/website-baitii-jannatii.git)
+    git clone https://github.com/almasfaiqkh/website-baitii-jannatii.git
     ```
 2.  **Navigate into the project directory:**
     ```bash
