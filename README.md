@@ -1,61 +1,99 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🌐 Website Profil Panti Asuhan Baitii Jannatii
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Ini adalah proyek Kerja Praktek untuk **Rancang Bangun Website Profil Panti Asuhan Baitii Jannatii** di Purwokerto. Website ini dibangun sebagai sistem informasi berbasis web untuk meningkatkan visibilitas online, memudahkan calon donatur mendapatkan informasi, serta menyediakan platform bagi panti untuk membagikan berita dan kegiatan mereka.
 
-## About Laravel
+![Tangkapan Layar Website](./screenshots/homepage.png)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Fitur Utama
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Untuk Pengunjung (Frontend)
+- **Desain Modern & Responsif:** Tampilan website dapat menyesuaikan diri dengan baik di berbagai perangkat (desktop, tablet, dan mobile).
+- **Halaman Dinamis:** Konten seperti Visi & Misi, Kontak, Galeri, dan Artikel dikelola sepenuhnya oleh admin.
+- **Animasi Interaktif:** Transisi halaman yang mulus (SPA) dan animasi saat scroll (`AOS.js`) untuk pengalaman pengguna yang lebih menarik.
+- **Galeri Foto:** Menampilkan kegiatan panti dengan fitur *lightbox* (zoom gambar).
+- **Daftar & Detail Artikel:** Pengunjung dapat membaca berita dan kegiatan terbaru yang dipublikasikan oleh panti.
+- **Formulir Kontak:** Pengunjung dapat mengirim pesan langsung melalui website.
 
-## Learning Laravel
+### 🔐 Untuk Admin (Backend)
+- **Otentikasi Aman:** Halaman admin dilindungi dengan sistem login.
+- **Dasbor Admin:** Tampilan utama setelah login.
+- **CRUD Pengaturan Website:** Admin dapat mengubah data inti seperti Visi, Misi, Alamat, dan Kontak kapan saja.
+- **CRUD Manajemen Galeri:** Admin dapat dengan mudah mengunggah dan menghapus foto-foto kegiatan.
+- **CRUD Manajemen Artikel:** Admin memiliki sistem untuk Tulis, Edit, dan Hapus artikel atau berita.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 💻 Tumpukan Teknologi (Tech Stack)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Proyek ini dibangun menggunakan tumpukan teknologi modern:
 
-## Laravel Sponsors
+- **Backend:** **Laravel 10** (PHP Framework)
+- **Frontend:** **Vue.js 3** (JavaScript Framework)
+- **Routing & Glue:** **Inertia.js** (untuk menciptakan pengalaman SPA)
+- **Styling:** **Tailwind CSS** (Utility-first CSS Framework)
+- **Database:** **MySQL**
+- **Development Environment:** Vite, XAMPP/Laragon
+- **Animasi:** AOS (Animate On Scroll)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🚀 Instalasi & Setup Lokal
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Berikut adalah cara untuk menjalankan proyek ini di lingkungan lokal.
 
-## Contributing
+**Prasyarat:**
+- PHP >= 8.1
+- Composer
+- Node.js & NPM
+- Database (MySQL)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+**Langkah-langkah:**
+1.  **Clone repository ini:**
+    ```bash
+    git clone [https://github.com/NAMA_USER_ANDA/NAMA_REPO_ANDA.git](https://github.com/NAMA_USER_ANDA/NAMA_REPO_ANDA.git)
+    ```
+2.  **Masuk ke direktori proyek:**
+    ```bash
+    cd nama-folder-proyek
+    ```
+3.  **Install dependensi PHP:**
+    ```bash
+    composer install
+    ```
+4.  **Install dependensi JavaScript:**
+    ```bash
+    npm install
+    ```
+5.  **Salin file environment:**
+    ```bash
+    cp .env.example .env
+    ```
+6.  **Generate application key:**
+    ```bash
+    php artisan key:generate
+    ```
+7.  **Konfigurasi file `.env`:**
+    Sesuaikan koneksi database (DB_DATABASE, DB_USERNAME, DB_PASSWORD) dengan pengaturan lokal Anda.
 
-## Code of Conduct
+8.  **Jalankan migrasi dan seeder database:**
+    ```bash
+    php artisan migrate:fresh --seed
+    ```
+9.  **Buat symbolic link untuk storage:**
+    ```bash
+    php artisan storage:link
+    ```
+10. **Jalankan server development:**
+    - Di terminal pertama: `php artisan serve`
+    - Di terminal kedua: `npm run dev`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+11. **Buka aplikasi:**
+    Akses `http://127.0.0.1:8000` di browser Anda.
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 📄 Lisensi
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Proyek ini dilisensikan di bawah Lisensi MIT.
